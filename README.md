@@ -1,7 +1,11 @@
 # EyeFuck
 
+
+
 **EyeFuck** is a lightweight Brainfuck-like language and interpreter, created by Bandika in 2025.  
 It features a simpler syntax, REPL mode, and can compile programs to `.exe` or assembly `.S` files via Go tooling.
+
+### to learn EyeFuck go to: https://learneyefuck.netlify.app/
 
 ---
 
