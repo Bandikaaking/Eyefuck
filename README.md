@@ -1,2 +1,2 @@
 # EyeFuck
-A new "BrainFuck", but maded by be
+A new "BrainFuck", but maded by me

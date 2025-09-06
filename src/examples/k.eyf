@@ -1,0 +1,5 @@
+!    # Set cell to 10
+/    # Increment by 1
+/    # Increment by 1
+^    # Increase by cell value
+.    # Output
