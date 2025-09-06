@@ -1,0 +1,9 @@
+set 00000001  # start at 1
+loop[         # loop until 5
+  print       # print current number
+  ^           # increment
+  set 00000101 # reset counter after 5 (example)
+]
+
+
+##MIGHT NOT WORK!!

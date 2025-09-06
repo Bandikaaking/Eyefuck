@@ -1,0 +1,7 @@
+set 00000101  # set cell to 5
+v             # decrement 1
+v             # decrement 2
+v             # decrement 3
+v             # decrement 4
+v             # decrement 5
+print         # print cell (should be 0)

@@ -1,0 +1,5 @@
+input         # read char
+loop[         # loop 3 times
+  print       # print input
+  v           # decrement loop counter
+]

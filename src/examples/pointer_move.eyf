@@ -1,0 +1,7 @@
+set 00000001  # set first cell
+>             # move pointer to next cell
+set 00000010  # set second cell
+<             # move pointer back
+print         # print first cell
+>             # move pointer to second cell
+print         # print second cell

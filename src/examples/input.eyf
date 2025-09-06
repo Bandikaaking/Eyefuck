@@ -1,0 +1,2 @@
+input         # read a character from user
+print         # print the character

@@ -1,0 +1,9 @@
+set 00000011  # outer loop counter
+loop[         # outer loop
+  ^           # increment outer
+  set 00000010 # inner loop counter
+  loop[       # inner loop
+    v         # decrement inner
+    print     # print inner value
+  ]
+]
