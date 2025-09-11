@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
+*.eyf linguist-language=EyeFuck
+
 * text=auto
