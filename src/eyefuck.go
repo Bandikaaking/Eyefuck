@@ -10,9 +10,20 @@ import (
 	"strings"
 )
 
+// ANSI colors
+const (
+	Reset  = "\033[0m"
+	Red    = "\033[31m"
+	Green  = "\033[32m"
+	Yellow = "\033[33m"
+	Blue   = "\033[34m"
+	Cyan   = "\033[36m"
+	White  = "\033[97m"
+)
+
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: eyefuck <command> [file.eyf]")
+		fmt.Println(Red + "Usage:" + Reset + " eyefuck <command> [file.eyf]")
 		return
 	}
 
@@ -21,7 +32,7 @@ func main() {
 	switch mode {
 	case "run":
 		if len(os.Args) < 3 {
-			fmt.Println("Please specify a file to run.")
+			fmt.Println(Red + "Please specify a file to run." + Reset)
 			return
 		}
 		file := os.Args[2]
@@ -34,20 +45,29 @@ func main() {
 	case "-i":
 		startREPL()
 	case "help":
-		fmt.Println("Eyefuck HELP:")
-		fmt.Println("  eyefuck run <file.eyf>  -> execute the Eyefuck file")
-		fmt.Println("  eyefuck -i             -> interactive REPL mode")
-		fmt.Println("  eyefuck about          -> information about this interpreter")
+		fmt.Println(Cyan + "Eyefuck HELP:" + Reset)
+		fmt.Println(Yellow + "  eyefuck run <file.eyf>" + Reset + "  -> " + Green + "execute the Eyefuck file" + Reset)
+		fmt.Println(Yellow + "  eyefuck -i" + Reset + "             -> " + Green + "interactive REPL mode" + Reset)
+		fmt.Println(Yellow + "  eyefuck about" + Reset + "          -> " + Green + "information about this interpreter" + Reset)
+	case "-help":
+		fmt.Println(Cyan + "Eyefuck HELP:" + Reset)
+		fmt.Println(Yellow + "  eyefuck run <file.eyf>" + Reset + "  -> " + Green + "execute the Eyefuck file" + Reset)
+		fmt.Println(Yellow + "  eyefuck -i" + Reset + "             -> " + Green + "interactive REPL mode" + Reset)
+		fmt.Println(Yellow + "  eyefuck about" + Reset + "          -> " + Green + "information about this interpreter" + Reset)
+	case "-h":
+		fmt.Println(Cyan + "Eyefuck HELP:" + Reset)
+		fmt.Println(Yellow + "  eyefuck run <file.eyf>" + Reset + "  -> " + Green + "execute the Eyefuck file" + Reset)
+		fmt.Println(Yellow + "  eyefuck -i" + Reset + "             -> " + Green + "interactive REPL mode" + Reset)
+		fmt.Println(Yellow + "  eyefuck about" + Reset + "          -> " + Green + "information about this interpreter" + Reset)
 	case "about":
-		fmt.Println("Eyefuck DEV 2025")
-		fmt.Println("MIT license see LICENSE for more information")
+		fmt.Println(Cyan + "Eyefuck DEV 2025" + Reset)
+		fmt.Println(Green + "MIT license" + Reset + " see LICENSE for more information")
 		fmt.Println("Please help me motive by giving the repo a star")
-		fmt.Println("github: github.com/bandikaaking")
-		fmt.Println("crafted with <3 by @Bandikaaking")
-
+		fmt.Println(Blue + "github:" + Reset + " github.com/bandikaaking")
+		fmt.Println("crafted with " + Red + "<3" + Reset + " by " + Yellow + "@Bandikaaking" + Reset)
 
 	default:
-		fmt.Println("Unknown mode:", mode)
+		fmt.Println(Red + "Unknown mode:" + Reset, mode)
 	}
 }
 
@@ -55,12 +75,12 @@ func main() {
 // Interactive REPL
 // ---------------------------
 func startREPL() {
-	fmt.Println("Eyefuck DEV 2025 - REPL")
+	fmt.Println(Cyan + "Eyefuck DEV 2025 - REPL" + Reset)
 	fmt.Println("Type commands below, empty line to execute, Ctrl+C to exit")
 	scanner := bufio.NewScanner(os.Stdin)
 	codeLines := []string{}
 	for {
-		fmt.Print("> ")
+		fmt.Print("$ ")
 		if !scanner.Scan() {
 			break
 		}
@@ -144,7 +164,8 @@ func runInterpreter(code string) {
 				}
 			}
 		default:
-			println("Error at line: ", line)
+			println(Red + "error caught while parsing")
+			println(Red + "at line: ", line)
 		}
 	}
 	fmt.Println()

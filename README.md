@@ -86,6 +86,10 @@ eyefuck about
 
 ---
 
+# For more codes
+
+Go to <a href="src/examples/"> The example folders </a>
+
 ## License
 
 MIT License. See `LICENSE` for details.
