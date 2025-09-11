@@ -3,7 +3,7 @@
 
 
 **EyeFuck** is a lightweight Brainfuck-like language and interpreter, created by Bandika in 2025.  
-It features a simpler syntax, REPL mode.
+It features a simpler syntax, and a  **__REPL__** mode.
 
 ### to learn EyeFuck go to: https://learneyefuck.netlify.app/
 
@@ -23,13 +23,13 @@ First you will see a syntaxes.vsix in the syntax/ folder
 
 ![step1](/src/pictures/win3.png)
 
-Next you need to go to the **Extension Manager** Press CTR+ALT+X
+Next you need to go to the **Extension Manager** Press CTR+SHIFT+X
 
 then, you would find 3 dots, click on it, then select *"Install from VSIX..."*
 
 ![step2](/src/pictures/Windows1.png)
 
-then select the syntaces.vsix
+then select the syntaxes.vsix
 
 ![step3](/src/pictures/windows2.png)
 
@@ -39,6 +39,8 @@ Now you Have EyeFuck support
 
 ### Linux/macOS/BSD
 - Use the respective build scripts: `buildlinux.sh`, `buildmac.sh`, `buildbsd.sh`.
+
+``
 
 ---
 
