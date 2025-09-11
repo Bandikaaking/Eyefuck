@@ -34,5 +34,7 @@ if %ERRORLEVEL% NEQ 0 (
 echo ========================================
 echo DONE! EyeFuck is now in %TARGET_DIR%
 echo REFRESH your PowerShell/terminal to use the 'eyefuck' command
+echo if you find any problems open an issue on github, or just want to add tips for the future
+echo "2025 Eyefuck dev, crafted with <3"
 echo ========================================
 pause
