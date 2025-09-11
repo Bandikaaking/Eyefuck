@@ -20,3 +20,5 @@ sudo mv -f $BINARY "$INSTALL_DIR/$BINARY"
 sudo chmod +x "$INSTALL_DIR/$BINARY"
 
 echo ">> Done! $BINARY is now installed in $INSTALL_DIR and should be in your PATH."
+echo "[comment] if you notice any problem please open an issue in github!"
+echo Enjoy EyeFuck!
