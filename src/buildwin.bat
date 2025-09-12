@@ -1,7 +1,7 @@
-REM you need to run this file with admin rights, or it will not be downloaded System WIDE
-
 
 @echo off
+REM you need to run this file with admin rights, or it will not be downloaded System WIDE
+
 SETLOCAL
 
 echo ========================================

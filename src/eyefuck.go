@@ -42,19 +42,9 @@ func main() {
 		}
 		code := string(data)
 		runInterpreter(code)
-	case "-i":
+	case "-i", "--i", "i":
 		startREPL()
-	case "help":
-		fmt.Println(Cyan + "Eyefuck HELP:" + Reset)
-		fmt.Println(Yellow + "  eyefuck run <file.eyf>" + Reset + "  -> " + Green + "execute the Eyefuck file" + Reset)
-		fmt.Println(Yellow + "  eyefuck -i" + Reset + "             -> " + Green + "interactive REPL mode" + Reset)
-		fmt.Println(Yellow + "  eyefuck about" + Reset + "          -> " + Green + "information about this interpreter" + Reset)
-	case "-help":
-		fmt.Println(Cyan + "Eyefuck HELP:" + Reset)
-		fmt.Println(Yellow + "  eyefuck run <file.eyf>" + Reset + "  -> " + Green + "execute the Eyefuck file" + Reset)
-		fmt.Println(Yellow + "  eyefuck -i" + Reset + "             -> " + Green + "interactive REPL mode" + Reset)
-		fmt.Println(Yellow + "  eyefuck about" + Reset + "          -> " + Green + "information about this interpreter" + Reset)
-	case "-h":
+	case "help", "-help", "-h", "--h", "--help":
 		fmt.Println(Cyan + "Eyefuck HELP:" + Reset)
 		fmt.Println(Yellow + "  eyefuck run <file.eyf>" + Reset + "  -> " + Green + "execute the Eyefuck file" + Reset)
 		fmt.Println(Yellow + "  eyefuck -i" + Reset + "             -> " + Green + "interactive REPL mode" + Reset)
@@ -65,7 +55,6 @@ func main() {
 		fmt.Println("Please help me motive by giving the repo a star")
 		fmt.Println(Blue + "github:" + Reset + " github.com/bandikaaking")
 		fmt.Println("crafted with " + Red + "<3" + Reset + " by " + Yellow + "@Bandikaaking" + Reset)
-
 	default:
 		fmt.Println(Red + "Unknown mode:" + Reset, mode)
 	}
@@ -118,41 +107,65 @@ func runInterpreter(code string) {
 		}
 
 		switch {
-		case line == "^":
+		case line == "^": // increment cell
 			tape[ptr]++
-		case line == "v":
+		case line == "v": // decrement cell
 			tape[ptr]--
-		case line == ">":
+		case line == ">": // move pointer right
 			ptr++
 			if ptr >= len(tape) {
 				ptr = 0
 			}
-		case line == "<":
+		case line == "<": // move pointer left
 			if ptr <= 0 {
 				ptr = len(tape) - 1
 			} else {
 				ptr--
 			}
-		case strings.HasPrefix(line, "set"):
+		case strings.HasPrefix(line, "bin"): // set cell from binary
 			bin := strings.TrimSpace(line[4:])
 			val, err := strconv.ParseInt(bin, 2, 8)
 			if err != nil {
 				log.Fatal(err)
 			}
 			tape[ptr] = byte(val)
-		case line == "print":
-			fmt.Printf("%c", tape[ptr])
-		case line == "input":
-			var input string
-			fmt.Scanln(&input)
-			if len(input) > 0 {
-				tape[ptr] = input[0]
-			} else {
-				tape[ptr] = 0
+		case strings.HasPrefix(line, "col"): // set text color from HEX
+			start := strings.Index(line, "[")
+			end := strings.Index(line, "]")
+			if start == -1 || end == -1 || end <= start+1 {
+				log.Fatal("Invalid col syntax")
 			}
-		case strings.HasPrefix(line, "loop["):
+			hex := line[start+1 : end]
+			colorInt, err := strconv.ParseInt(hex, 16, 32)
+			if err != nil {
+				log.Fatal("Invalid HEX color")
+			}
+			r := (colorInt >> 16) & 0xFF
+			g := (colorInt >> 8) & 0xFF
+			b := colorInt & 0xFF
+			fmt.Printf("\033[38;2;%d;%d;%dm", r, g, b)
+		case strings.HasPrefix(line, "load["): // load file
+			start := strings.Index(line, "[")
+			end := strings.Index(line, "]")
+			if start == -1 || end == -1 || end <= start+1 {
+				log.Fatal("Invalid load syntax")
+			}
+			filename := line[start+1 : end]
+			data, err := ioutil.ReadFile(filename)
+			if err != nil {
+				log.Fatal(err)
+			}
+			tape[ptr] = 0
+			_ = data
+		case line == ",": // read single byte input
+			var b [1]byte
+			os.Stdin.Read(b[:])
+			tape[ptr] = b[0]
+		case line == ".": // print cell as char
+			fmt.Printf("%c", tape[ptr])
+		case strings.HasPrefix(line, "loop["): // start loop
 			loopStack = append(loopStack, i)
-		case line == "]":
+		case line == "]": // end loop
 			if tape[ptr] != 0 {
 				if len(loopStack) == 0 {
 					log.Fatal("Unmatched ]")
