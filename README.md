@@ -4,6 +4,8 @@
 
 it was good but now it is fucked up, idk
 
+---
+
 **EyeFuck** is a lightweight Brainfuck-like language and interpreter, created by Bandika in 2025.  
 It features a simpler syntax, and a  **__REPL__** mode.
 
