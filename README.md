@@ -4,12 +4,15 @@
 
 it was good but now it is fucked up, idk
 
----
+and **__**There are problems with the command highliting too**__**
+
+
+well there is no problem with it if you use the VS code terminal, but *there* is a problem with it, and i AM lazy to do it, so if you know the problem, **__PLS__** OPEN a Pull request
+
 
 **EyeFuck** is a lightweight Brainfuck-like language and interpreter, created by Bandika in 2025.  
 It features a simpler syntax, and a  **__REPL__** mode.
 
-### to learn EyeFuck go to: https://learneyefuck.netlify.app/
 
 ---
 
@@ -62,8 +65,8 @@ eyefuck -i
 Example:
 ```
 Eyefuck DEV 2025
-> set 01001000
-> print
+> bin 01001000
+> .
 > ...
 ```
 
@@ -77,13 +80,13 @@ eyefuck about
 
 ## Syntax
 
-- `set <binary>` — sets current cell to a binary value
+- `bin <binary>` — sets current cell to a binary value
 - `^` — increment current cell
 - `v` — decrement current cell
 - `>` — move pointer right
 - `<` — move pointer left
-- `print` — output current cell as ASCII
-- `input` — read one character from stdin
+- `.` — output current cell as ASCII
+- `,` — read one character from stdin
 - `loop[ ... ]` — loop while current cell != 0
 - `# <comment>` — comments
 
