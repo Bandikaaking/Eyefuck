@@ -1,5 +1,3 @@
-# EyeFuck
-
 ## Problems
 
 it was good but now it is fucked up, idk
