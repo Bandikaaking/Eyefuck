@@ -1,5 +1,3 @@
-# EyeFuck
-
 ## Problems
 
 it was good but now it is fucked up, idk
@@ -12,11 +10,14 @@ annnnnnnnndddd i there is no build file for the c# and for the rust version i wi
 well there is no problem with it if you use the VS code terminal, but *there* is a problem with it, and i AM lazy to do it, so if you know the problem, **__PLS__** OPEN a Pull request
 
 
+IF you use win11 terminal it will work but if you use win 10 <       it will NOT
+
+
+----
 **EyeFuck** is a lightweight Brainfuck-like language and interpreter, created by Bandika in 2025.  
 It features a simpler syntax, a complete interpreter, and a  **__REPL__** mode. It also features 2 more commands
 
 
----
 
 ## Installation
 
