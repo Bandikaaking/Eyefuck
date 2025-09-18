@@ -65,8 +65,9 @@ eyefuck -i
 Example:
 ```
 Eyefuck DEV 2025
-> bin 01001000
+> set 01001000
 > .
+> 
 > ...
 ```
 
@@ -103,6 +104,6 @@ eyefuck about
 
 Go to <a href="src/examples/"> The example folders </a>
 
-## License
+# License
 
 MIT License. See `LICENSE` for details.

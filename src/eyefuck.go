@@ -1,3 +1,8 @@
+/** 
+* BAHHH
+i am hungry as fuck, but i guesssssssssssss i have to do this...... welp, it's been 2 weeks and repo's got no star
+*/
+
 package main
 
 import (
@@ -90,7 +95,7 @@ func startREPL() {
 // Eyefuck Interpreter
 // ---------------------------
 func runInterpreter(code string) {
-	tape := make([]byte, 30000)
+	tape := make([]byte, 300000)
 	ptr := 0
 	lines := strings.Split(code, "\n")
 	loopStack := []int{}

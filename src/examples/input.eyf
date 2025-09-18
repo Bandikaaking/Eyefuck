@@ -1,2 +1,2 @@
-input         # read a character from user
-print         # print the character
+.         # read a character from user
+,         # print the character

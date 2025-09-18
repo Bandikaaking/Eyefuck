@@ -18,6 +18,10 @@ REM Check if Go is installed
 where go >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
     echo Go is not installed or not in PATH!
+    echo install it with "winget install GoLang.Go"
+    echo or if you are on windows 10 < 
+    echo download it from: https://go.dev/dl/
+    echo and choose "Microsoft Windows"
     pause
     exit /b 1
 )
@@ -35,6 +39,8 @@ echo ========================================
 echo DONE! EyeFuck is now in %TARGET_DIR%
 echo REFRESH your PowerShell/terminal to use the 'eyefuck' command
 echo if you find any problems open an issue on github, or just want to add tips for the future
-echo "2025 Eyefuck dev, crafted with <3"
+echo 2025 Eyefuck dev, crafted with <3
 echo ========================================
 pause
+
+
