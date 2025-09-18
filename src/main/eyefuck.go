@@ -1,10 +1,10 @@
 /** 
 * BAHHH
 i am hungry as fuck, but i guesssssssssssss i have to do this...... welp, it's been 2 weeks and repo's got no star
+i'll just go and eat. 
 */
 
 package main
-
 import (
 	"bufio"
 	"fmt"
@@ -14,6 +14,7 @@ import (
 	"strconv"
 	"strings"
 )
+
 
 // ANSI colors
 const (
@@ -27,6 +28,7 @@ const (
 )
 
 func main() {
+	EyfV := 1.2
 	if len(os.Args) < 2 {
 		fmt.Println(Red + "Usage:" + Reset + " eyefuck <command> [file.eyf]")
 		return
@@ -60,6 +62,16 @@ func main() {
 		fmt.Println("Please help me motive by giving the repo a star")
 		fmt.Println(Blue + "github:" + Reset + " github.com/bandikaaking")
 		fmt.Println("crafted with " + Red + "<3" + Reset + " by " + Yellow + "@Bandikaaking" + Reset)
+	case "version", "--v", "--version", "-v", "v", "-version":
+		fmt.Println("Current eyefuck version: %v", EyfV)
+	//other versions and a lil' descriptions
+	case "ov", "-ov", "--ov":
+		fmt.Println("Other Eyefuck versions: ")
+		fmt.Println("0.10: Started / added 2 instructions")
+		fmt.Println("0.11-0.43: Fixed many bugs, and edded 5 more instructions")
+		fmt.Println("1.0: Added syntax highliting")
+		fmt.Println("1.1: Fixed bugs")
+		fmt.Println("added more eyefuck modes / rewrited README.md")
 	default:
 		fmt.Println(Red + "Unknown mode:" + Reset, mode)
 	}
@@ -188,3 +200,4 @@ func runInterpreter(code string) {
 	}
 	fmt.Println()
 }
+//good job Andrew i guess

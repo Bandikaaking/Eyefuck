@@ -6,6 +6,8 @@ INSTALL_DIR=/usr/local/bin
 
 echo "Building $BINARY for BSD..."
 
+cd main
+
 go build -o $BINARY eyefuck.go
 
 # Create install directory if it doesn't exist
