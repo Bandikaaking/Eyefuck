@@ -1,8 +1,4 @@
-﻿/**
-* BAHHH
-i am hungry as fuck, but i guesssssssssssss i have to do this...... welp, it's been 2 weeks and repo's got no star
-i'll just go and eat. 
-*/
+﻿/* Hello hello i am happy to see you! I send ChatGPT my repo link and it sayd "You should improve it, Let me help you!"  i sayd "no" proud of me??? please be */
 
 using System;
 using System.Collections.Generic;
