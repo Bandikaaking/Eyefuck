@@ -11,7 +11,7 @@ well there is no problem with it if you use the VS code terminal, but *there* is
 
 
 **EyeFuck** is a lightweight Brainfuck-like language and interpreter, created by Bandika in 2025.  
-It features a simpler syntax, and a  **__REPL__** mode.
+It features a simpler syntax, a complete interpreter, and a  **__REPL__** mode. It also features 2 more commands
 
 
 ---
@@ -21,7 +21,8 @@ It features a simpler syntax, and a  **__REPL__** mode.
 ### Windows
 1. Run `buildwin.bat` **as Administrator**.
 2. This will compile `eyefuck.go` and place `eyefuck.exe` in `C:\Windows`.
-3. `C:\Windows` is already in PATH, so you can run `eyefuck` from any terminal.
+
+*(Don't be afraid cus it copies it to C:\Windows no problem will occuer commands like "qemu" is in C:\Windows cus it is already in PATH)*
 ### How to get Syntax Higliting
 
 First you will see a syntaxes.vsix in the syntax/ folder
@@ -30,7 +31,7 @@ First you will see a syntaxes.vsix in the syntax/ folder
 
 ![step1](/src/pictures/win3.png)
 
-Next you need to go to the **Extension Manager** Press CTR+SHIFT+X
+Next you need to go to the **Extension Manager**, Press CTR+SHIFT+X
 
 then, you would find 3 dots, click on it, then select *"Install from VSIX..."*
 
@@ -63,8 +64,11 @@ eyefuck run <file.eyf>
 eyefuck -i
 ```
 Example:
-```
+```bash
+eyefuck -i
+
 Eyefuck DEV 2025
+
 > set 01001000
 > .
 > 
@@ -88,7 +92,9 @@ eyefuck about
 - `<` — move pointer left
 - `.` — output current cell as ASCII
 - `,` — read one character from stdin
-- `loop[ ... ]` — loop while current cell != 0
+- `loop[ ... ]` — loop while current cell not equals to  0
+- `col[(color HEX value)]` — sets current AND after cells to color, so texts  will be printed with colors
+- `load[(filename)]` — Loads the file and stores it at current cell
 - `# <comment>` — comments
 
 ---
@@ -104,6 +110,13 @@ eyefuck about
 
 Go to <a href="src/examples/"> The example folders </a>
 
-# License
+## License
 
 MIT License. See `LICENSE` for details.
+
+
+# If you notice any problems
+
+Please open a pull request it would help me a **__****LOT****__**.
+
+thanks for using Eyefuck🥰!
