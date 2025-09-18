@@ -1,10 +1,12 @@
 # EyeFuck
 
-## There is a problem with the .vsix file
+## Problems
 
 it was good but now it is fucked up, idk
 
 and **__**There are problems with the command highliting too**__**
+
+annnnnnnnndddd i there is no build file for the c# and for the rust version i will write that sometime, okay?
 
 
 well there is no problem with it if you use the VS code terminal, but *there* is a problem with it, and i AM lazy to do it, so if you know the problem, **__PLS__** OPEN a Pull request
