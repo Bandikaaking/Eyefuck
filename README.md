@@ -12,11 +12,12 @@ well there is no problem with it if you use the VS code terminal, but *there* is
 
 IF you use win11 terminal it will work but if you use win 10 <       it will NOT
 
+
+----
 **EyeFuck** is a lightweight Brainfuck-like language and interpreter, created by Bandika in 2025.  
 It features a simpler syntax, a complete interpreter, and a  **__REPL__** mode. It also features 2 more commands
 
 
----
 
 ## Installation
 
