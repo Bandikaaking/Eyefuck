@@ -1,11 +1,6 @@
 ## Problems
 
-it was good but now it is fucked up, idk
-
-and **__**There are problems with the command highliting too**__**
-
-annnnnnnnndddd i there is no build file for the c# and for the rust version i will write that sometime, okay?
-
+the ANSI highliting
 
 well there is no problem with it if you use the VS code terminal, but *there* is a problem with it, and i AM lazy to do it, so if you know the problem, **__PLS__** OPEN a Pull request
 
@@ -14,6 +9,15 @@ IF you use win11 terminal it will work but if you use win 10 <       it will NOT
 
 
 ----
+
+## Well...
+
+i never taught getting this far under 2 week, my friend even my TEACHER helped me, really thanks for
+- Tom: He maked the HolyC and the Zig code!
+and my **Programming Teacher** who maked the Lolcode code!
+
+
+
 **EyeFuck** is a lightweight Brainfuck-like language and interpreter, created by Bandika in 2025.  
 It features a simpler syntax, a complete interpreter, and a  **__REPL__** mode. It also features 2 more commands
 
