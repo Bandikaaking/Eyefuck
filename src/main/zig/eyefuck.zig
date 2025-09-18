@@ -1,5 +1,10 @@
 // They say "zig is easy" i.. have no idea WHO lied to them?!
 
+
+//you know what i'll just ask Tom if he could write the code for me
+
+//yes i can Andrew
+
 const std = @import("std");
 const mem = std.mem;
 const fs = std.fs;
@@ -212,4 +217,3 @@ fn runInterpreter(allocator: std.mem.Allocator, code: []const u8) !void {
     const stdout = io.getStdOut().writer();
     try stdout.print("\n", .{});
 }
-//good job Andrew i guess
