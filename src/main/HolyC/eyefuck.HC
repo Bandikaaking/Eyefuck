@@ -1,8 +1,6 @@
 /* experimental, only works in TempleOS, and i am NOT that good in holyC so my good friend Tom writes it (i would link his github profile if he would have one..) */
 
-//hello i am  Tom and i know HolyC really goooooooooood, but! holyC does not support ANSI colors....
-//sry Andrew
- 
+//hello i am  Tom and i know HolyC really goooooooooood, but! holyC does not support ANSI colors.... BUT it has templesOs colors
 #include "HCLib.h"
 
 // HolyC doesn't have ANSI colors in the same way, but we can use TempleOS colors, AND... well..... i am only learing holyc for 2 years...
