@@ -7,7 +7,21 @@ well there is no problem with it if you use the VS code terminal, but *there* is
 
 IF you use win11 terminal it will work but if you use win 10 <       it will NOT
 
-
+## Langs i wrote eyfuck
+(from old to new)
+Go
+Rust
+C#
+ruby
+lua
+C
+C++
+Zig
+Nim
+Php
+Python
+HolyC
+Lolcode
 
 
 # Well...
