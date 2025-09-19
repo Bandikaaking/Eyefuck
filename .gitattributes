@@ -1,2 +1,6 @@
-
 * text=auto
+*.lua linguist-detectable=true
+*.rb linguist-detectable=true
+*.py linguist-detectable=true
+*.lol linguist-detectable=true
+*.zig linguist-detectable=true

@@ -5,7 +5,7 @@
  
 #include "HCLib.h"
 
-// HolyC doesn't have ANSI colors in the same way, but we can use TempleOS colors
+// HolyC doesn't have ANSI colors in the same way, but we can use TempleOS colors, AND... well..... i am only learing holyc for 2 years...
 #define RESET "\c0"
 #define RED "\c1"
 #define GREEN "\c2"

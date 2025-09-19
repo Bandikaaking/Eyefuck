@@ -4,6 +4,20 @@ HEWHEHHHEHHEHEHEHEHH
 
 i guess i'll rewrite it in RUST!!! anddddd this is `rustc` not `cargo`
 i will write another Buidling for c# AND rust, but it is late and i am lazy
+
+fact: you can actully
+
+rustc eyefuck.rs -o eyefuck
+
+generated an eyefuck.exe (or eyefuck.o)
+
+and then paste it to c:\windows (or sudo cp eyefuck.o /usr/local/bin)
+
+and BUMMM you now have eyefuck locally installed from the rust code
+
+and i recomend doing the buildwin.bat, becuse it is more safer
+
+and enjoy eyefuck
 */
 
 use std::fs;
