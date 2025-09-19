@@ -7,10 +7,24 @@ well there is no problem with it if you use the VS code terminal, but *there* is
 
 IF you use win11 terminal it will work but if you use win 10 <       it will NOT
 
+## Langs i wrote eyfuck
+(from old to new)
+Go
+Rust
+C#
+ruby
+lua
+C
+C++
+Zig
+Nim
+Php
+Python
+HolyC
+Lolcode
 
-----
 
-## Well...
+# Well...
 
 i never taught getting this far under 2 week, my friend even my TEACHER helped me, really thanks for
 - Tom: He maked the HolyC and the Zig code!

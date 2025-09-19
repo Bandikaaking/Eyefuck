@@ -1,7 +1,7 @@
 HAI 1.4
 CAN HAS STDIO?
 
-VISIBLE "my teacher knows lolcode (idk how)"
+BTW my teacher knows lolcode (idk how)
 
 I HAS A RESET ITZ "\033[0m"
 I HAS A RED ITZ "\033[31m"
