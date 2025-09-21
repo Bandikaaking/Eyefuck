@@ -1,6 +1,6 @@
 <?php
 
-/* Well hello, did you know, i learned php first! */
+/* did you know, i learned php first! */
 
 // ANSI colors
 define('RESET', "\033[0m");
@@ -227,5 +227,4 @@ function run_interpreter($code) {
 if (isset($argv) && count($argv) > 0 && basename($argv[0]) == basename(__FILE__)) {
     main();
 }
-//good job Andrew i guess
 ?>

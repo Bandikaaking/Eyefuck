@@ -2,7 +2,7 @@ bin 00000001  # start at 1
 loop[         # loop until 5
   .       # print current number
   ^           # increment
-  bin 00000101 # reset counter after 5 (example)
+  bin 00000101 # reset counter after 5
 ]
 
 

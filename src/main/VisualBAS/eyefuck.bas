@@ -202,3 +202,7 @@ Module EyefuckInterpreter
         Console.WriteLine()
     End Sub
 End Module
+
+
+' or it looks like c# and lua
+

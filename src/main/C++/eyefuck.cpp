@@ -1,21 +1,6 @@
-/** 
-Hello fellas!
-
-here is the timeline of what file i created (only including eyefuck interpreters not building file nor LICENSE-s etc.)
-(old to young)
-- eyefuck.go (oldest)
-- eyefuck.rs
-- eyefuck.cs (or Program.cs)
-- eyefuck.rb
-- eyefuck.lua
-- eyefuck.c
-- eyefuck.cpp (youngest)
-
-and i maked theese files under 3 days (fineshed them OFC), i AM proud of myself
-
-
-*kiss for you*
-*/
+/****************************************
+**             Hello fellas!            **
+*****************************************/
 
 
 #include <iostream>
@@ -267,4 +252,3 @@ void run_interpreter(const std::string& code) {
     
     std::cout << std::endl;
 }
-//good job Andrew i guess

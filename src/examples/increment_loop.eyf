@@ -1,11 +1,10 @@
-bin 00000010  # counter = 2
-loop[         # start loop
-  ^           # increment current cell
-  .       # print value
-  v           # decrement current cell
-]             # end loop
+loop[
+  ^
+  ^
+  loop[
+    v 
+    v 
+  ]
+]
 
-
-##the output is gonna look a little unusal. like:
-
-# ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+# howdy

@@ -264,4 +264,3 @@ void run_interpreter(const char *code) {
     free(tape);
     free(code_copy);
 }
-//good job Andrew i guess

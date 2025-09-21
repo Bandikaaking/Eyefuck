@@ -1,10 +1,11 @@
-/** 
+/**
 * BAHHH
 i am hungry as fuck, but i guesssssssssssss i have to do this...... welp, it's been 2 weeks and repo's got no star
-i'll just go and eat. 
+i'll just go and eat.
 */
 
 package main
+
 import (
 	"bufio"
 	"fmt"
@@ -14,7 +15,6 @@ import (
 	"strconv"
 	"strings"
 )
-
 
 // ANSI colors
 const (
@@ -37,6 +37,12 @@ func main() {
 	mode := os.Args[1]
 
 	switch mode {
+	case "eyefuck <command> [file.eyf]":
+		fmt.Println("If you wrote this - What i wrote 'Usage: eyefuck <command> [file.eyf]' is just showing " + Red + "how to " + Reset + "use it\n")
+		fmt.Println("Example: You have a file named: program.eyf and you wanna use it, now you need to use the `run` command")
+		fmt.Println(Green + "eyefuck run program.eyf" + Reset)
+		fmt.Println("See? It is not that hard")
+		
 	case "run":
 		if len(os.Args) < 3 {
 			fmt.Println(Red + "Please specify a file to run." + Reset)
@@ -51,7 +57,7 @@ func main() {
 		runInterpreter(code)
 	case "-i", "--i", "i":
 		startREPL()
-	case "help", "-help", "-h", "--h", "--help":
+	case "help", "-help", "-h", "--h", "--help", "h":
 		fmt.Println(Cyan + "Eyefuck HELP:" + Reset)
 		fmt.Println(Yellow + "  eyefuck run <file.eyf>" + Reset + "  -> " + Green + "execute the Eyefuck file" + Reset)
 		fmt.Println(Yellow + "  eyefuck -i" + Reset + "             -> " + Green + "interactive REPL mode" + Reset)

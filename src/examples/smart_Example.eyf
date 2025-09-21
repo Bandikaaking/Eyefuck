@@ -1,0 +1,6 @@
+, # get user input, AND store it in current cell
+> # go to the next cell
+. # nothing will be printed, (Well..... the user input is )
+# but
+< # go back 1 cell
+. # not it will print user input

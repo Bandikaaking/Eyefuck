@@ -1,5 +1,6 @@
 # i actully HATE python
 # i have no idea of WHY
+# maybe it is over
 import sys
 import os
 import re
@@ -18,7 +19,7 @@ TAPE_SIZE = 300000
 
 def main():
     if len(sys.argv) < 2:
-        print(f"{RED}Usage:{RESET} eyefuck <command> [file.eyf]")
+        print(f"{RED}Usage:{RESET} {GREEN} eyefuck <command> [file.eyf] {RESET}")
         return
 
     mode = sys.argv[1]
@@ -50,7 +51,7 @@ def main():
     elif mode in ["version", "--v", "--version", "-v", "v", "-version"]:
         print(f"Current eyefuck version: {EYF_V}")
     elif mode in ["ov", "-ov", "--ov"]:
-        print("Other Eyefuck versions: ")
+        print(f"{GREEN}Other Eyefuck versions: ")
         print("0.10: Started / added 2 instructions")
         print("0.11-0.43: Fixed many bugs, and edded 5 more instructions")
         print("1.0: Added syntax highliting")

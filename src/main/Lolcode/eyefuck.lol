@@ -1,8 +1,12 @@
+
+
 HAI 1.4
 CAN HAS STDIO?
 
 BTW my teacher knows lolcode (idk how)
 
+BTW
+BTW
 I HAS A RESET ITZ "\033[0m"
 I HAS A RED ITZ "\033[31m"
 I HAS A GREEN ITZ "\033[32m"
@@ -280,3 +284,9 @@ IF U SAY SO
 
 I IZ MAIN YR ARGS MKAY
 KTHXBYE
+
+
+
+
+
+

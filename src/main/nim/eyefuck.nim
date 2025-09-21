@@ -1,8 +1,7 @@
-# how are you?
-
+# i don't know... nim is, not my favorite (like lua). But i don't hate it (like python)
+# it is like... idk 
 import os, strutils, strformat, parseutils, re, terminal
 
-# ANSI colors
 const
   Reset = "\e[0m"
   Red = "\e[31m"
@@ -179,4 +178,3 @@ proc runInterpreter(code: string) =
 
 when isMainModule:
   main()
-#good job Andrew i guess

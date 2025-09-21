@@ -1,5 +1,5 @@
-,         # read char
-loop[         # loop 3 times
-  .       # print input
-  v           # decrement loop counter
-]
+, # read input, and store it in current cell
+. # print it
+
+
+

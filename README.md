@@ -9,26 +9,31 @@ IF you use win11 terminal it will work but if you use win 10 <       it will NOT
 
 ## Langs i wrote eyfuck
 (from old to new)
-Go
-Rust
-C#
-ruby
-lua
-C
-C++
-Zig
-Nim
-Php
-Python
-HolyC
-Lolcode
+- Go
+- Rust
+- C#
+- ruby
+- lua
+- C
+- C++
+- Nim
+- Php
+- Python
+- VisualBasic
+- F#
 
+## Langs my Friend and my Teacher wrote
+- HolyC
+- Zig
+- LolCode
 
 # Well...
 
 i never taught getting this far under 2 week, my friend even my TEACHER helped me, really thanks for
 - Tom: He maked the HolyC and the Zig code!
-and my **Programming Teacher** who maked the Lolcode code!
+<br>
+and my 
+- **Programming Teacher** who maked the Lolcode code!
 
 
 
@@ -80,19 +85,28 @@ Now you Have EyeFuck support
 eyefuck run <file.eyf>
 ```
 
-### Start interactive REPL
-```bash
+### Start REPL
+```
 eyefuck -i
+or
+eyefuck i
+eyefuck --i
+eyefuck repl
+eyefuck -repl
+eyefuck --repl
+eyefuck --REPL
+eyefuck REPL
 ```
 Example:
 ```bash
 eyefuck -i
 
-Eyefuck DEV 2025
+Eyefuck DEV 2025 - REPL
+Type commands below, empty line to execute, Ctrl+C to exit
 
-> set 01001000
+> bin 01001000
 > .
-> 
+>
 > ...
 ```
 
