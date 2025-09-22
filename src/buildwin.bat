@@ -37,7 +37,7 @@ REM Build the exe
 rustc "%RUST_FILE%" -o "%TARGET_DIR%\%EXE_NAME%"
 if %ERRORLEVEL% NEQ 0 (
     color %RED%
-    echo ERROR: Build failed. Make sure eyefuck.rs exists and you have admin rights.
+    echo ERROR: Build failed. Make sure eyefuck.rs exists and you started the building with admin permission.
     pause
     exit /b 1
 )
