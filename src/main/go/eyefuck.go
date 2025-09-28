@@ -2,6 +2,8 @@
 * BAHHH
 i am hungry as fuck, but i guesssssssssssss i have to do this...... welp, it's been 2 weeks and repo's got no star
 i'll just go and eat.
+
+i actully hate go
 */
 
 package main

@@ -1,7 +1,7 @@
 # ruby eyefuck interpreter, WOAH
 # ruby is interpreter andd not a compiled... i.. i will search if i can get a eyefuck.exe orrr ... wait why do i need it??
 # there is already a eyefuck.exe (or eyefuck.o linux / UNIX users) when the eyefuck.go is compiled... WAIIIIITTTTT
-# welp then, there will be no build file for c# rust lua ruby, only for go
+# welp then, there will be no build file for c# rust lua ruby, only for go (now it is only rust)
 # (sorry for this)
 
 

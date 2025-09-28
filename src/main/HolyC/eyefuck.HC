@@ -3,7 +3,6 @@
 //hello i am  Tom and i know HolyC really goooooooooood, but! holyC does not support ANSI colors.... BUT it has templesOs colors
 #include "HCLib.h"
 
-// HolyC doesn't have ANSI colors in the same way, but we can use TempleOS colors, AND... well..... i am only learing holyc for 2 years...
 #define RESET "\c0"
 #define RED "\c1"
 #define GREEN "\c2"
@@ -15,9 +14,7 @@
 F64 EYF_V = 1.2;
 U64 TAPE_SIZE = 300000;
 
-// ---------------------------
-// Main function
-// ---------------------------
+
 I64 Main(I64 argc, char **argv)
 {
     if (argc < 2)
@@ -90,7 +87,7 @@ I64 Main(I64 argc, char **argv)
 }
 
 // ---------------------------
-// Interactive REPL
+//  REPL
 // ---------------------------
 U0 StartREPL()
 {
@@ -116,7 +113,7 @@ U0 StartREPL()
             current_len = 0;
             continue;
         }
-        
+        /***/
         // Resize if needed
         U64 line_len = StrLen(line);
         if (current_len + line_len + 2 > total_size)
@@ -205,11 +202,13 @@ U0 RunInterpreter(U8 *code)
             while (*bin_str == ' ' || *bin_str == '\t') bin_str++;
             tape[ptr] = (U8)StrToI64(bin_str, NULL, 2);
         }
-        else if (StrStartsWith(trimmed, "col"))
+       else if (StrStartsWith(trimmed, "col"))
         {
             // set text color from HEX - HolyC doesn't support ANSI colors, so we skip
             // This would be a no-op in TempleOS
+            "Sry andrew"
         }
+        
         else if (StrStartsWith(trimmed, "load["))
         {
             // load file

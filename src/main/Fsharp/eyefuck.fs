@@ -82,7 +82,7 @@ let main argv =
             1
 
 // ---------------------------
-// Interactive REPL
+//  REPL
 // ---------------------------
 let startREPL () =
     printfn "%sEyefuck DEV 2025 - REPL%s" CYAN RESET

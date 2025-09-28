@@ -3,6 +3,10 @@ Eyefuck.lua as i was saying in the eyefuck.rb i will **NOT** compile this
 , go to eyefuck.rb for more info 
 ]]
 
+--[[
+and i love LUA, is my FAVORITE
+]]
+
 -- ANSI colors
 local RESET = "\27[0m"
 local RED = "\27[31m"

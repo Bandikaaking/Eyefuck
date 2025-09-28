@@ -1,3 +1,35 @@
+# BIG UPDATE!!!
+
+now **Eyefuck** can be COMPILED and INTERPRETERD and REPL-ed!!
+
+see?
+
+all you need is just FASM
+
+## install `FASM` in **Windows**
+
+*(i recommend doing it via scoop)*
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+scoop bucket add extras
+
+scoop install fasm
+
+```
+
+## Install ``FASM`` in linux distros:
+
+with `apt`
+```bash
+sudo apt update
+sudo apt install fasm
+```
+with
+
 ## Problems
 
 the ANSI highliting
@@ -6,6 +38,8 @@ well there is no problem with it if you use the VS code terminal, but *there* is
 
 
 IF you use win11 terminal it will work but if you use win 10 <       it will NOT
+
+
 
 ## Langs i wrote eyfuck
 (from old to new)
@@ -46,7 +80,7 @@ It features a simpler syntax, a complete interpreter, and a  **__REPL__** mode. 
 
 ### Windows
 1. Run `buildwin.bat` **as Administrator**.
-2. This will compile `eyefuck.go` and place `eyefuck.exe` in `C:\Windows`.
+2. This will compile `eyefuck.rs` and place `eyefuck.exe` in `C:\Windows`.
 
 *(Don't be afraid cus it copies it to C:\Windows no problem will occuer commands like "qemu" is in C:\Windows cus it is already in PATH)*
 ### How to get Syntax Higliting

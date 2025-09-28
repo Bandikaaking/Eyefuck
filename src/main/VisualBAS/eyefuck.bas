@@ -1,5 +1,4 @@
 ' am i the only one that think VB looks like lua?
-
 Imports System
 Imports System.IO
 Imports System.Text.RegularExpressions

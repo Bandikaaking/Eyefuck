@@ -1,5 +1,16 @@
+# Eyefuck Security
 
-# MIT License
+The Eyefuck interpreter does **__NOT__** comes with any warranty. <br>And i do not take any personal information. If you see any 
+<br>
+eyefuck reposity that asks for your *personal information* or takes warranty. It's **Not the real Eyefuck reposity**
+
+# where to report a problem
+
+**If you saw a problem in the Eyefuck code / builder code, please open a pull request**
+
+## Under the **MIT** license:
+
+
 
 **Copyright (c) 2025 Bandikaaking** 
 

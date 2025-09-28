@@ -3,7 +3,10 @@
 
 //you know what i'll just ask Tom if he could write the code for me
 
-//yes i can Andrew
+//yes i can Andrew, i will DM it to you
+//k
+
+
 
 const std = @import("std");
 const mem = std.mem;
@@ -36,7 +39,8 @@ pub fn main() !void {
     const args = try process.argsAlloc(allocator);
     defer process.argsFree(allocator, args);
 
-    if (args.len < 2) {
+    if (args.len < 2) 
+    {
         std.debug.print(RED ++ "Usage:" ++ RESET ++ " eyefuck <command> [file.eyf]\n", .{});
         return;
     }
