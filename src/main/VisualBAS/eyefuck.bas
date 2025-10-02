@@ -12,7 +12,6 @@ Module EyefuckInterpreter
     Const BLUE As String = vbEsc & "[34m"
     Const CYAN As String = vbEsc & "[36m"
     Const WHITE As String = vbEsc & "[97m"
-    
     Const EYF_V As Single = 1.2
     Const TAPE_SIZE As Integer = 300000
     

@@ -15,5 +15,5 @@ go.work
 go.work.sum
 
 .env
-.*o
-.*pdb
+*.o
+*.pdb
