@@ -21,14 +21,52 @@ scoop install fasm
 
 ```
 
-## Install ``FASM`` in linux distros:
+## Install ``FASM`` (the CLI command) in linux / BSD distros:
 
-with `apt`
+with `apt` (on DEBIAN-based systems, like: Ubuntu,Debian,Pop!_Os etc. et.c)
 ```bash
-sudo apt update
+sudo apt update 
 sudo apt install fasm
 ```
-with
+
+
+On Red-Hat-based systems (like Fedora,Red hat linux,AlmaLinux, ClearOS)
+
+Becuse i am a windows user **do not know if red hat based systems have the CLI FASM, in their package.
+
+```bash
+dnf seach fasm
+sudo dnf install fasm # only if found
+```
+if there is no fasm, you can download the **Official Binary**
+```bash
+wget https://flatassembler.net/download.php
+tar -xvzf fasm-1.73.23.tgz
+sudo mv fasm/fasm /usr/local/bin/
+chmod +x /usr/local/bin/fasm
+```
+
+Arch-Based distros (Manjaro, Endveavour etc.)
+In arch-based distros they have fasm in AUR
+
+```bash
+sudo pacman -S fasm
+```
+or with AUR, if it is not in the core rep
+```bash
+yay -S fasm
+```
+
+BSD distros:
+
+```bash
+pkg install fasm
+```
+
+SUSE system-s:
+```bash
+sudo zypper install fasm
+```
 
 ## Problems
 
