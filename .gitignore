@@ -17,3 +17,4 @@ go.work.sum
 .env
 *.o
 *.pdb
+.*vscode
