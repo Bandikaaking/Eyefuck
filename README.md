@@ -70,13 +70,7 @@ sudo zypper install fasm
 
 ## Problems
 
-the ANSI highliting
-
-well there is no problem with it if you use the VS code terminal, but *there* is a problem with it, and i AM lazy to do it, so if you know the problem, **__PLS__** OPEN a Pull request
-
-
-IF you use win11 terminal it will work but if you use win 10 <       it will NOT
-
+no probelms has been detected!
 
 
 ## Langs i wrote eyfuck
