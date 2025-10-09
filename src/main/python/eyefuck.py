@@ -14,7 +14,7 @@ BLUE = "\033[34m"
 CYAN = "\033[36m"
 WHITE = "\033[97m"
 
-EYF_V = 1.2
+EYF_V = 1.2 # ah... it still has the good ol' 1.2... when i tough it will be just an interpreter
 TAPE_SIZE = 300000
 
 def main():
@@ -60,9 +60,11 @@ def main():
     else:
         print(f"{RED}Unknown mode:{RESET} {mode}")
 
-# ---------------------------
-# Interactive REPL
-# ---------------------------
+""" 
+---------------------------
+ Interactive REPL
+ ---------------------------
+ """
 def start_repl():
     print(f"{CYAN}Eyefuck DEV 2025 - REPL{RESET}")
     print("Type commands below, empty line to execute, Ctrl+C to exit")
@@ -83,9 +85,11 @@ def start_repl():
             print()
             break
 
-# ---------------------------
-# Eyefuck Interpreter
-# ---------------------------
+"""
+---------------------------
+Eyefuck Interpreter
+---------------------------
+"""
 def run_interpreter(code):
     tape = [0] * TAPE_SIZE
     ptr = 0

@@ -1,7 +1,7 @@
 <?php
 
 /* did you know, i learned php first! */
-
+/* and it's a goddamn plan to write an interpreter in an interpreter! */
 // ANSI colors
 define('RESET', "\033[0m");
 define('RED', "\033[31m");

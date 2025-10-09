@@ -2,7 +2,7 @@
 # it is like... idk 
 
 # there is a problem with it, and i will not fix it!
-import os, strutils, strformat, parseutils, re, terminal
+import os, strutils, strformat, re
 
 const
   Reset = "\e[0m"

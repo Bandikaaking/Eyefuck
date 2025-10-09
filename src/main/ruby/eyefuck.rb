@@ -19,7 +19,7 @@ TAPE_SIZE = 300000
 
 def main
   if ARGV.length < 1
-    puts "#{RED}Usage:#{RESET} eyefuck <command> [file.eyf]"
+    puts "#{RED}Uge:#{RESET} eyefuck <command> [file.eyf]"
     return
   end
 

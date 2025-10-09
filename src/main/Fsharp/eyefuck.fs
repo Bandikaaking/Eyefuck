@@ -141,9 +141,10 @@ let runInterpreter (code: string) =
                     printfn "Invalid binary format"
                     exit 1
             | line when line.StartsWith("col") -> // set text color from HEX
-                let m = Regex.Match(line, @"\[([0-9A-Fa-f]+)\]")
+                let m = Regex.Match(line, @"\[([0-9A-Fa-f]+)\]") (*so cute*)
                 if m.Success then
-                    let hex = m.Groups.[1].Value
+                    let hex = m.Groups.[1].Value 
+                    
                     try
                         let colorInt = Convert.ToInt32(hex, 16)
                         let r = (colorInt >>> 16) &&& 0xFF
@@ -193,3 +194,4 @@ let runInterpreter (code: string) =
     
     printfn ""
 
+(*i hate F#*)
